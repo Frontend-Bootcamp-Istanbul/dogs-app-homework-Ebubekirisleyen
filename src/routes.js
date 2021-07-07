@@ -3,6 +3,7 @@ import Homepage from "./containers/Homepage";
 import Goldens from "./containers/Goldens";
 import Cavaliers from "./containers/Cavaliers";
 import FilteredDogs from "./containers/FilteredDogs";
+import Details from "./containers/Details";
 
 const routes = [
     {
@@ -16,6 +17,12 @@ const routes = [
         exact: false,
         component: FilteredDogs,
         title: "Filtrelenmis Dogs"
+    },
+    {
+        path: "/detail/:kopekid",
+        exact: false,
+        component: Details,
+        title: "Details"
     },
     {
         path: "/hakkinda",
